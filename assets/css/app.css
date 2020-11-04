@@ -75,18 +75,18 @@ main.site-container {
     margin-left     : 10px;
     display         : inline-block;
     vertical-align  : middle;
-    background-color: var(--dark);
-}
-
-.menu>li>a {
-    display       : block;
-    padding       : 10px;
     text-transform: uppercase;
 }
 
-.menu>li>a:active {
+.menu>li>a:not(.nes-btn) {
+    color: #fff !important;
+    display       : block;
+    padding       : 13px;
+}
+
+.menu>li>a:active:not(.nes-btn)  {
     color           : var(--dark);
-    background-color: lavenderblush;
+    background-color: var(--dark);
 }
 
 /* update behavor inherit component */
