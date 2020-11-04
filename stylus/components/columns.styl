@@ -1,5 +1,16 @@
 .columns
     display              : grid;
+    gap                  : 20px
+
+.columns.is-full 
+    grid-template-columns: repeat(1, 1fr);
+    gap                  : 20px
+
+.columns.is-one-two
+    grid-template-columns: repeat(2, 1fr);
+    gap                  : 20px
+
+.columns.is-one-third 
     grid-template-columns: repeat(3, 1fr);
     gap                  : 20px
 
@@ -7,7 +18,7 @@
     margin-bottom: 20px
 
 @media(max-width: 600px)
-    .columns
+    .columns.is-one-third
         grid-template-columns: repeat(1, 1fr);
 
     .title,
