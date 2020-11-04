@@ -41,9 +41,19 @@ header a span {
 }
 
 header h1.title {
-    color: #fff;
+    color         : #fff;
     text-transform: uppercase;
-    font-size: 20px !important;
+    font-size     : 20px !important;
+}
+
+body.site {
+    display       : flex;
+    flex-direction: column;
+    min-height    : 100vh;
+}
+
+main.site-container {
+    flex: 1;
 }
 
 .menu {
@@ -66,4 +76,26 @@ header h1.title {
 .menu>li>a:active {
     color           : var(--dark);
     background-color: lavenderblush;
+}
+
+/* update behavor inherit component */
+.container {
+    margin-top: 100px;
+    border    : none;
+}
+
+/*  columns */
+.columns {
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap                  : 20px;
+}
+
+.columns .column:nth-child(n+1) {
+    margin-bottom: 20px;
+}
+
+/*  avatar */
+.avatar img {
+    width: 80px;
 }
