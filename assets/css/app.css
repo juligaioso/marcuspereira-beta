@@ -25,6 +25,10 @@ a {
 }
 
 header {
+    padding: 1.5rem 2rem;
+}
+
+header div {
     display         : flex;
     flex-wrap       : wrap;
     justify-content : space-between;
@@ -33,6 +37,8 @@ header {
     background-color: var(--warning) !important;
     box-shadow      : 20px 10px 0px 1px #000;
 }
+
+
 
 header a span {
     color         : var(--dark);
