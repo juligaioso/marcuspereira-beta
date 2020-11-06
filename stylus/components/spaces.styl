@@ -1,2 +1,116 @@
-.margin-top-medium
-    margin-top: 2.5rem !important;
+.margin
+    margin-bottom 20px
+
+*
+    & + .margin
+        margin-top 20px !important
+    & + .margin-small
+        margin-top 10px !important
+    & + .margin-medium
+        margin-top 40px !important
+    & + .margin-large
+        margin-top 40px !important
+    & + .margin-xlarge
+        margin-top 70px !important
+
+.margin-top
+    margin-top 20px !important
+
+.margin-bottom
+    margin-bottom 20px !important
+
+.margin-left
+    margin-left 20px !important
+
+.margin-right
+    margin-right 20px !important
+
+.margin-small
+    margin-bottom 10px
+
+.margin-small-top
+    margin-top 10px !important
+
+.margin-small-bottom
+    margin-bottom 10px !important
+
+.margin-small-left
+    margin-left 10px !important
+
+.margin-small-right
+    margin-right 10px !important
+
+.margin-medium
+    margin-bottom 40px
+
+.margin-medium-top
+    margin-top 40px !important
+
+.margin-medium-bottom
+    margin-bottom 40px !important
+
+.margin-medium-left
+    margin-left 40px !important
+
+.margin-medium-right
+    margin-right 40px !important
+
+.margin-large
+    margin-bottom 40px
+
+.margin-large-top
+    margin-top 40px !important
+
+.margin-large-bottom
+    margin-bottom 40px !important
+
+.margin-large-left
+    margin-left 40px !important
+
+.margin-large-right
+    margin-right 40px !important
+
+@media (min-width: 1200px)
+    .margin-large
+        margin-bottom 70px
+    *
+        & + .margin-large
+            margin-top 70px !important
+    .margin-large-top
+        margin-top 70px !important
+    .margin-large-bottom
+        margin-bottom 70px !important
+    .margin-large-left
+        margin-left 70px !important
+    .margin-large-right
+        margin-right 70px !important
+
+.margin-xlarge
+    margin-bottom 70px
+
+.margin-xlarge-top
+    margin-top 70px !important
+
+.margin-xlarge-bottom
+    margin-bottom 70px !important
+
+.margin-xlarge-left
+    margin-left 70px !important
+
+.margin-xlarge-right
+    margin-right 70px !important
+
+@media (min-width: 1200px)
+    .margin-xlarge
+        margin-bottom 140px
+    *
+        & + .margin-xlarge
+            margin-top 140px !important
+    .margin-xlarge-top
+        margin-top 140px !important
+    .margin-xlarge-bottom
+        margin-bottom 140px !important
+    .margin-xlarge-left
+        margin-left 140px !important
+    .margin-xlarge-right
+        margin-right 140px !important

@@ -1,0 +1,79 @@
+.container
+    display flow-root
+    box-sizing content-box
+    max-width 1200px
+    margin-left auto
+    margin-right auto
+    padding-left 15px
+    padding-right 15px
+    border none !important
+    & > :last-child
+        margin-bottom 0
+    .container
+        padding-left 0
+        padding-right 0
+
+@media (min-width: 640px)
+    .container
+        padding-left 30px
+        padding-right 30px
+
+@media (min-width: 960px)
+    .container
+        padding-left 40px
+        padding-right 40px
+
+.container-xsmall
+    max-width 750px
+
+.container-small
+    max-width 900px
+
+.container-large
+    max-width 1400px
+
+.container-xlarge
+    max-width 1600px
+
+.container-expand
+    max-width none
+
+.columns
+    display grid
+    gap 20px
+    &.is-full
+        grid-template-columns repeat(1, 1fr)
+        gap 20px
+    &.is-one-two
+        grid-template-columns repeat(2, 1fr)
+        gap 20px
+    &.is-one-third
+        grid-template-columns repeat(3, 1fr)
+        gap 20px
+    .columnnth-child(n & + 1)
+        margin-bottom 20px
+
+@media (max-width: 600px)
+    .columns
+        &.is-one-third
+            grid-template-columns repeat(1, 1fr)
+        &.is-one-two
+            grid-template-columns repeat(1, 1fr)
+    .nes-container
+        margin-top 0px
+    .collapse
+        display block
+    .author-name
+        font-size 10px
+
+@media (max-width: 600px)
+    .title, .hide-sm
+        display none
+
+@media (min-width: 601px)
+    .hide-md
+        display none !important
+
+@media (min-width: 601px) and (max-width: 850px)
+    .columns
+        grid-template-columns repeat(2, 1fr)
