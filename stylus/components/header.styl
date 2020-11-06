@@ -46,11 +46,14 @@ main.site-container
     vertical-align  : middle;
     text-transform: uppercase;
 
-.menu>li>a:not(.nes-btn)
-    color: #fff !important;
-    display       : block;
-    padding       : 13px;
-
-.menu>li>a:active:not(.nes-btn) 
-    color           : dark;
-    background-color: dark;
+.menu
+    & > li
+        & > a
+            &:not(.nes-btn)
+                color #fff !important
+                display block
+                padding 13px
+            &:active
+                &:not(.nes-btn)
+                    color dark
+                    background-color #9f3bed
