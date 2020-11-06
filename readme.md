@@ -1,6 +1,6 @@
-Este projeto tem o intuíto de levar conhecimento para as pessoas! A ideia é fazer isso de forma 100% prática e 100% gratuíta no qual o indiduo se sinta 100% confortável em aprender com conteúdos de ótima qualidade.
+Este projeto tem o intuíto de levar conhecimento para as pessoas!
 
-Nós somos 100%:
+Nós somos:
 
 - Open Source
 - Free Software
@@ -34,3 +34,7 @@ E para rodar o projeto em modo de desenvolvimento, é necessário gerar o arquiv
 ```bash
 $ npm run w-css
 ```
+
+## Revisão
+
+Ainda estamos operando na base beta, não criamos nenhuma lógica de programação. Estamos trabalhando 100% no css e no html do projeto. Você pode sugerir coisas na sessão de issues.
