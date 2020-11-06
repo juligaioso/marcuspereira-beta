@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "w-css": "npx stylus -w stylus/main.styl -o assets/css/style.css",
+    "b-css": "npx stylus stylus/main.styl -o assets/css/style.css"
   },
   "keywords": [],
   "author": "",
