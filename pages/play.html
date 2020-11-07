@@ -26,6 +26,7 @@
 
   <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
 </head>
 
 <body class="site">
@@ -72,7 +73,7 @@
       <div class="columns is-full">
         <div class="column">
           <section class="player is-dark">
-             <video width="100%" height="auto" controls preload="auto" >
+             <video width="100%" height="auto" id="video"  playsinline controls preload="auto" >
               <source src="/assets/videos/fire.mp4" type="video/mp4">
               <source src="movie.ogg" type="video/ogg">
             Your browser does not support the video tag.
@@ -117,6 +118,13 @@
       </li>
     </ul>
   </footer>
+
+  <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
+  <script>
+    window.onload  = function() {
+      new Plyr('#video');
+    }
+  </script>
 </body>
 
 </html>
