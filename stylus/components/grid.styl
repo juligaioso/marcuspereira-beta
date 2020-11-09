@@ -50,6 +50,15 @@
     &.is-one-third
         grid-template-columns repeat(3, 1fr)
         gap 20px
+
+.columns-playlist
+    display grid
+    grid-template-columns repeat(4, auto)
+    gap 10px
+.column2
+    grid-column 2/5
+
+
 .column
     &:nth-child(n + 1)
         margin-bottom 35px !important
@@ -66,6 +75,12 @@
         display block
     .author-name
         font-size 10px
+
+    .columns-playlist
+        grid-template-columns repeat(1, fr)
+        font-size 10px
+    .column2
+        grid-column 1
 
 @media (max-width: 600px)
     .title, .hide-sm
